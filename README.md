@@ -8,21 +8,21 @@ This version of the fuzz type-checker for Z is released under an MIT-style licen
 
 ##Installation
 
-The source of the type-checker is in the 'src' directory. There are no configuration options, and all I can say is that it compiles OK under Linux/i386. However, previous versions of the type-checker have been ported to lots of different 16- and 32-bit architectures, so there's some hope it is fairly robust.
+The source of the type-checker is in the `src` directory. There are no configuration options, and all I can say is that it compiles OK under Linux/i386. However, previous versions of the type-checker have been ported to lots of different 16- and 32-bit architectures, so there's some hope it is fairly robust.
 
 To build and install:
 
 1. Edit the top level Makefile to set the installation directories.
-2. Say 'make' at the top level (or in the src subdirectory) to build the type-checker.
-3. (Optional) Say 'make test' to run some regression tests.
-4. Say 'su -c "make install"' to install all the bits and pieces.
-5. If your TeX implementation needs it, run 'texhash' to update TeX's directory information.
+2. Say `make` at the top level (or in the src subdirectory) to build the type-checker.
+3. (Optional) Say `make test` to run some regression tests.
+4. Say `sudo make install` to install all the bits and pieces.
+5. If your TeX implementation needs it, run `texhash` to update TeX's directory information.
 
 That's all!
 
 ##Documentation
 
-Documentation can be found in the 'doc' subdirectory. Generating the documents from the LaTeX input requires LaTeX 2.09, so I've included PDF files for convenience.
+Documentation can be found in the `doc` subdirectory. Generating the documents from the LaTeX input requires LaTeX 2.09, so I've included PDF files for convenience.
 
 ## Language
 
@@ -68,7 +68,7 @@ Redistribution and use in source and binary forms, with or without modification,
 
 **February 2007 (Vesion 3.2)**: Re-released under MIT-style licence to make bundling easier.
 
-**September 2007 (Version 3.3)**: Fixed a long-standing bug that prevented 'pre Op' being used as a predicate.
+**September 2007 (Version 3.3)**: Fixed a long-standing bug that prevented `'pre Op` being used as a predicate.
 
 **October 2008 (Version 3.4)**: Added missing references to header files to assist in building on 64 bit architectures.
 
