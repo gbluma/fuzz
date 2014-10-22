@@ -12,11 +12,11 @@ The source of the type-checker is in the 'src' directory. There are no configura
 
 To build and install:
 
-#. Edit the top level Makefile to set the installation directories.
-#. Say 'make' at the top level (or in the src subdirectory) to build the type-checker.
-#. (Optional) Say 'make test' to run some regression tests.
-#. Say 'su -c "make install"' to install all the bits and pieces.
-#. If your TeX implementation needs it, run 'texhash' to update TeX's directory information.
+1. Edit the top level Makefile to set the installation directories.
+2. Say 'make' at the top level (or in the src subdirectory) to build the type-checker.
+3. (Optional) Say 'make test' to run some regression tests.
+4. Say 'su -c "make install"' to install all the bits and pieces.
+5. If your TeX implementation needs it, run 'texhash' to update TeX's directory information.
 
 That's all!
 
@@ -32,8 +32,8 @@ The Z language accepted is still that of the Z Reference Manual, second edition.
 
 There are a couple of features of the type-checker that were not in the last commercial version of fuzz:
 
-Use before definition (-d flag). The type-checker can build a dependency graph of the specification before type-checking and topologically sort it. The upshot is that, with very few restrictions, you can put the paragraphs of a specification in whatever order best suits exposition.
-Lisp-style echoing (-l flag). The type-checker will optionally echo each input paragraph in dependency order using a lisp-style syntax. I've used this as a way of inputting specs into experimental analysis programs, saving the experimenter the trouble of parsing and doing dependency analysis. It's trivial to write a parser for the lisp-style syntax in most languages: we've used ML in our experiments.
+Use before definition (`-d` flag). The type-checker can build a dependency graph of the specification before type-checking and topologically sort it. The upshot is that, with very few restrictions, you can put the paragraphs of a specification in whatever order best suits exposition.
+Lisp-style echoing (`-l` flag). The type-checker will optionally echo each input paragraph in dependency order using a lisp-style syntax. I've used this as a way of inputting specs into experimental analysis programs, saving the experimenter the trouble of parsing and doing dependency analysis. It's trivial to write a parser for the lisp-style syntax in most languages: we've used ML in our experiments.
 
 ## Downloading
 
@@ -41,10 +41,15 @@ Lisp-style echoing (-l flag). The type-checker will optionally echo each input p
 ```
     git clone https://github.com/gbluma/fuzz.git
 ```
-* Fuzz manual: PDF file.
-* A Z reference card: PDF file.
-* Versions of these two formatted for 2-up printing on A4 as PDF files: manual, reference card.
-* A slightly different reference card that fits on one double-sided sheet of A4: PDF file.
+* Fuzz manual: 
+[PDF file](https://raw.githubusercontent.com/gbluma/fuzz/master/doc/fuzzman.pdf).
+* A Z reference card: 
+[PDF file](https://raw.githubusercontent.com/gbluma/fuzz/master/doc/refcard.pdf).
+* Versions of these two formatted for 2-up printing on A4 as PDF files: 
+[manual](https://raw.githubusercontent.com/gbluma/fuzz/master/doc/fuzzman-2up.pdf), 
+[reference card](https://raw.githubusercontent.com/gbluma/fuzz/master/doc/refcard-2up.pdf).
+* A slightly different reference card that fits on one double-sided sheet of A4: 
+[PDF file](https://raw.githubusercontent.com/gbluma/fuzz/master/doc/refcard-3up.pdf).
 
 ## Software Licence
 
